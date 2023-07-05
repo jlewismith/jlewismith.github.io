@@ -11,6 +11,13 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			p {
+				margin-bottom: 15px;
+			}
+		</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -30,11 +37,11 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">About</a></li>
-								<li><a href="#work">Projects</a></li>
-								<li><a href="#about">Resume</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#projects">Projects</a></li>
+								<li><a href="#resume">Resume</a></li>
 								<!-- <li><a href="#contact">Contact</a></li> -->
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<!-- <li><a href="#elements">Elements</a></li> -->
 							</ul>
 						</nav>
 						<ul class="icons">
@@ -50,47 +57,103 @@
 					<div id="main">
 
 						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
+							<article id="about">
+								<h2 class="major" style="margin-bottom: 15px;">About</h2>
 								<span class="image right"><img src="images/Headshots-118.jpg" alt=""/></span>
-								<p>I love creating tools that simplify difficult tasks and automate tedious chores. 
-									Here are some technologies I have used in my professional and academic careers:
+								<p style="margin-bottom: 15px;">I love creating tools to simplify, automate, and enable. 
+									Here are some of the technologies I have used in my academic and professional projects:</p>
+								<h3 style="margin-bottom: 15px;">Languages and Frameworks</h3>
+									<ul style="margin-bottom: 15px;">
+										<li>Python and JavaScript</li>
+										<li>C# with ASP.NET Core</li>
+										<li>Java with Spring</li>
+										<li>C++ and Arduino</li>
+										<li>Pytest and Selenium WebDriver</li>
+									</ul>
+								<h3 style="margin-bottom: 15px;">Tools and Environments</h3>
 									<ul>
-										<li>Python</li>
-										<li>C# with ASP.NET</li>
-										<li>Google Cloud</li>
-										<li>GitLab and GitHub</li>
-										<li>IntelliJ Idea and PyCharm</li>
-										<li>Java with Spring Framework</li>
-										<li>Selenium WebDriver</li>
+										<li>Docker, GitLab CI, Google Cloud, and AWS</li>
+										<li>MySQL and MongoDB</li>
+										<li>Linux, Windows, MacOS, and Android</li>
+										<li>VS Code, Vim, PyCharm, IntelliJ, Rider</li>
 									</ul>
 								<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p> -->
 							</article>
 
 						<!-- Projects -->
-							<article id="work">
+							<article id="projects">
 								<h2 class="major">Projects</h2>
-								<span class="image main"><img src="images/simonClock.png" alt="" /></span>
-								<!-- <span class="image main">
-									<video style="height:100%;" controls>
-										<source src="https://lh3.googleusercontent.com/zRfeC0v1hi9TVm7aMhOPYKyhBSZdVOX3b4zHRa8HZeScmAP5FN0oDSrR8ONGWfggFHRcjGTLNuMUxDi3OW3vvm9QC3GPYcCtDxFkNtH50dFvdFx_iE2HgO6eI0JQGkhBUO5XqPRs-ww=m18" type="video/mp4">
-								  	</video>
-								</span> -->
-								<h3>Simon Alarm Clock</h3>
-								<p>
-									I've always been inspired by the work of YouTuber Mark Rober, so when I had the opportunity to take a creative engineering course taught by him, I jumped on it. 
-									As part of that experience I created this alarm clock that makes me play the Simon game to prove I'm awake before it stops ringing. 
-								</p>
-								<p>After I make a few more tweaks, I'd like to order a PCB of my circuit and design/3-D print a case for it.</p>
-									
-								<p> I've recorded a demo video of my prototype you can view <a href="https://photos.app.goo.gl/vGfKJ2A5MzEn9iW16">here</a>.</p>
-									
-								<p>You can view my source code <a href="https://github.com/jlewismith/Simon-Alarm-Clock">here</a>.</p>
-								<!-- <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p> -->
+								
+								<label style="margin-top: 15px; margin-bottom: 0px;" for="simon-proj-button">Simon Alarm Clock</label>
+								<button id="simon-proj-button" 
+									style="background-image: url(images/simonClock.png); background-size:contain; background-position: center; background-repeat: no-repeat;
+									height: 250px; width: 350px; padding: 30px;
+									font-weight: bold;"
+									onclick="window.location.href='#simon'"> </button>
+								
+								<label style="margin-top: 15px; margin-bottom: 0px;" for="capstone-proj-button">OnBoard Senior Capstone</label>
+								<button id="capstone-proj-button"
+									style="background-image: url(images/onboardLogo.svg); background-size:contain; background-position: center; background-repeat: no-repeat;
+									height: 250px; width: 350px; margin: auto;
+									font-size: 30px; text-shadow: black 0.07em 0.07em 0.07em"
+									onclick="window.location.href='#capstone'"> </button>
+							</article>
+
+							<article id="capstone">
+								<!-- <section id="capstone"> -->
+									<a href="#projects">&lt; Projects</a>
+									<h2 style="margin-top: 20px;">OnBoard Capstone Project</h2>
+									<p>
+										I graduated from the University of Utah in Spring 2023. My capstone team project was an online virtual board game environment.
+										Here's the poster from our demo day:
+									</p>
+									<span class="image main"><img src="images/CapstonePoster.png" alt="" /></span>
+
+									<p>These were my technical accomplishments on the project:</p>
+
+									<ul>
+										<li>Automated a deployment pipeline using Docker, GitLab Runner, and Google Cloud</li>
+										<li>Integrated Swagger UI and MongoDB driver into our ASP.NET API</li>
+										<li>Managed a MongoDB database</li>
+									</ul>
+
+									<p>
+										Along with these technical accomplishments, I regularly presented the project with my team to others, including fellow students, course staff, and industry professionals.
+									</p>
+								<!-- </section> -->
+							</article>
+
+							<article id="simon">
+								<!-- <section id="simon"> -->
+									<a href="#projects">&lt; Projects</a>
+									<h2 style="margin-top: 20px;">Simon Alarm Clock</h2>
+									<p>
+										I've always been inspired by the work of YouTuber Mark Rober, so when I had the opportunity to take his online course on Creative Engineering, I jumped on it! 
+										I started this project as part of that experience. Here's my prototype:
+									</p>
+									<span class="image main"><img src="images/simonClock.png" alt="" /></span>
+									<!-- <span class="image main">
+										<video style="height:100%;" controls>
+											<source src="https://lh3.googleusercontent.com/zRfeC0v1hi9TVm7aMhOPYKyhBSZdVOX3b4zHRa8HZeScmAP5FN0oDSrR8ONGWfggFHRcjGTLNuMUxDi3OW3vvm9QC3GPYcCtDxFkNtH50dFvdFx_iE2HgO6eI0JQGkhBUO5XqPRs-ww=m18" type="video/mp4">
+										</video>
+									</span> -->
+									<p>
+										Here's what it does. . . Remember this classic Simon game?
+									</p>
+									<img src="images/220px-Simon_Electronic_Game.jpg"/>
+									<p>
+										The alarm function makes me play several rounds of Simon to prove that I'm awake before it stops ringing. 
+										I recorded a demo video of some early functionality you can view 
+										<a href="https://photos.app.goo.gl/vGfKJ2A5MzEn9iW16">here</a>.  
+										Since then, I've added some new features including a menu system for changing settings and device modes.
+									</p>
+									<p>After I make a few more tweaks, I'd like to order a PCB of my circuit and design a 3D-printed case for it.</p>
+									<p>You can view my source code <a href="https://github.com/jlewismith/Simon-Alarm-Clock">here</a>.</p>
+								<!-- </section> -->
 							</article>
 
 						<!-- Resume -->
-							<article id="about">
+							<article id="resume">
 								<h2 class="major">Resume</h2>
 								<p><a href="images/Resume.pdf">My Resume - Updated 4 July 2023</a></p>
 								<iframe src="images/Resume.pdf" width="100%" height="500px">
